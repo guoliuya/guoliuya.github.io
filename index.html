@@ -1,26 +1,80 @@
 <!DOCTYPE html>
-<html>
-<script>
-function browserRedirect() {
-    var sUserAgent = navigator.userAgent.toLowerCase();
-    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-    var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-    var bIsAndroid = sUserAgent.match(/android/i) == "android";
-    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-    if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){
-        window.location.href="http://blog.csdn.net/feng8888bbb";
-    } else {
-        window.location.href="http://m.blog.csdn.net/blog/index?username=feng8888bbb";
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
     }
-}
-browserRedirect();
-</script>
 
+    header {
+      text-align: center;
+      padding: 10px;
+      background-color: #f2f2f2;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    article {
+      margin-bottom: 30px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    p {
+      color: #777;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      padding: 10px;
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
 <body>
-</body>
+  <header>
+    <h1>guozijia  test Blog</h1>
+	<h2>guoliuya  test Blog</h2>
+  </header>
 
+  <main>
+    <article>
+      <h2>First Blog Post</h2>
+      <p>This is my first blog post. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+
+    <article>
+      <h2>Second Blog Post</h2>
+      <p>This is my second blog post. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </article>
+
+    <article>
+      <h2>Third Blog Post</h2>
+      <p>This is my third blog post. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2023 My Blog. All rights reserved.
+  </footer>
+</body>
 </html>
